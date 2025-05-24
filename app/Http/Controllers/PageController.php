@@ -125,14 +125,12 @@ class PageController extends Controller
     } 
     
     //Profile
-    // public function profile(Request $request)
-    // {
-    //     $username = $request->query('username');
+    public function profile(Request $request)
+    {
+        $username = $request->query('username');
 
-    //     if (!$username){
-    //         return redirect()->route('login')->withErrors(['login'=>])
-    //     }
-    // }
+        return view('profile',compact('username'));
+    } 
 
     //Logout
     public function logout()
