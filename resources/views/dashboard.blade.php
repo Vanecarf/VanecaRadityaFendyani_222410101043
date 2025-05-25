@@ -8,8 +8,8 @@
     <h1 class="text-2xl font-bold mb-4">Welcome, {{ $username }}</h1>
 
 <div class="flex items-center gap-4">
-    <input type="text" placeholder="Cari Produk" class="px-5 py-3 rounded-full w-72 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-300 transition duration-300" />
-    <button class="bg-rose-500 text-white py-3 px-8 rounded-full hover:bg-rose-600 transition duration-300">Cari</button>
+    <input type="text" placeholder="Cari Produk" class="px-5 py-3 rounded-full w-290 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-300 transition duration-300" />
+    <button class="bg-[#CD403B] text-white py-3 px-8 rounded-full hover:bg-rose-600 transition duration-300">Cari</button>
 </div>
 <br>
 

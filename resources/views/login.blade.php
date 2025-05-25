@@ -5,7 +5,7 @@
 @section('content')
     <div class="bg-[#CD403B] p-8 rounded-lg shadow-lg w-80 text-[#FFEEE2]">
     
-    <form action="/login" method="POST" class="space-y-4">
+    <form action="/login" method="POST" class="space-y-4 flex justify-center">
       @csrf
 
       <!-- Username -->

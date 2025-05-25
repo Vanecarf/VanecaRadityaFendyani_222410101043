@@ -19,7 +19,8 @@ class PageController extends Controller
         $password = $request->input('password');
 
         if ($username == 'Vaneca' && $password == 'seungmin') {
-            return redirect()->route('dashboard', ['username'=>$username]);
+            return redirect()->route('dashboard', ['username'=>$username]);;
+            return redirect()->route('profile', ['username'=>$username]);;
         }
 
         return back()->withErrors(['login'=>'Username atau Password salah!']);
