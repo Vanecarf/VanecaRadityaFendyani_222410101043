@@ -134,9 +134,9 @@ class PageController extends Controller
     } 
 
     //Edit
-    public function edit($kategori, $index)
+    public function edit($categories, $index)
     {
-        $data = $this->getDataByKategori($kategori);
+        $data = $this->getDataByKategori($categories);
 
         if (!isset($data[$index])) {
             return redirect()->back()->withErrors(['error' => 'Data tidak ditemukan.']);
@@ -155,8 +155,7 @@ class PageController extends Controller
             'harga' => 'required|string',
         ]);
 
-        return redirect()->route('dashboard', ['username' => $request->input('username')])
-                         ->with('Data berhasil diperbarui.');
+        return redirect()->route('modal')->with('Data berhasil diperbarui.');
     }
 
     //Logout
