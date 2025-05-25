@@ -18,9 +18,8 @@ class PageController extends Controller
         $username = $request->input('username');
         $password = $request->input('password');
 
-        if ($username == 'Vaneca' && $password == 'seungmin') {
+        if ($username == 'Vaneca' && $password == 'seungmin') { session(['username'=>$username]);
             return redirect()->route('dashboard', ['username'=>$username]);;
-            return redirect()->route('profile', ['username'=>$username]);;
         }
 
         return back()->withErrors(['login'=>'Username atau Password salah!']);
@@ -128,9 +127,10 @@ class PageController extends Controller
     //Profile
     public function profile(Request $request)
     {
-        $username = $request->query('username');
+        // $username = $request->query('username');
+        $username = session('username');
 
-        return view('profile',compact('username'));
+        return view('profile', ["username"=>$username]);
     } 
 
     //Edit
