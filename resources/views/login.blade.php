@@ -3,7 +3,7 @@
 @section('title','login')
 
 @section('content')
-  <div class="bg-[#CD403B] p-8 rounded-lg shadow-lg w-80 text-[#FFEEE2] w-full max-w-md mx-auto">
+  <div class="bg-[#CD403B] p-8 rounded-lg shadow-lg w-80 text-[#FFEEE2] w-full max-w-md mx-auto mt-43">
     
     <form action="/login" method="POST" class="space-y-4">
       @csrf
