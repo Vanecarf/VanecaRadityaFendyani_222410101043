@@ -24,7 +24,7 @@
             <div class="mb-10">
                 <div class="flex justify-between items-center mb-3">
                     <h2 class="text-xl font-semibold">{{ $label }}</h2>
-                    <a href="#" class="text-sm text-red-500 hover:underline">See More &gt;&gt;&gt;</a>
+                    <a href="#" class="text-sm text-[#CD403B] hover:underline">See More &gt;&gt;&gt;</a>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     @foreach ($items as $index => $item)
