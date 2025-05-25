@@ -3,9 +3,9 @@
 @section('title','login')
 
 @section('content')
-    <div class="bg-[#CD403B] p-8 rounded-lg shadow-lg w-80 text-[#FFEEE2]">
+  <div class="bg-[#CD403B] p-8 rounded-lg shadow-lg w-80 text-[#FFEEE2] w-full max-w-md mx-auto">
     
-    <form action="/login" method="POST" class="space-y-4 flex justify-center">
+    <form action="/login" method="POST" class="space-y-4">
       @csrf
 
       <!-- Username -->
@@ -34,8 +34,9 @@
         Login
       </button>
     </form>
+  </div>
 
-    <script>
+  <script>
         document.getElementById('loginForm').addEventListener('click', function () {
             const passwordField = document.getElementById('password');
     });

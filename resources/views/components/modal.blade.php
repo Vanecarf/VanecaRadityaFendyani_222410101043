@@ -1,5 +1,5 @@
-<div id="modal-{{ $index }}" class=hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justrify-center z-50>
-    <div class="bg-white rounded=lg p-6 w-80 relatives">
+<div id="modal-{{ $index }}" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg p-6 w-80 relatives">
         <h2 class="text-x1 font-bold text-rose-600 mb-2">{{$item['nama_barang']}}</h2>
         <img src="{{ $item['images_detail'] }}" alt="$item['nama_barang']" class="w-32 h-32 mx-auto object-contain mb-4">
         <p><strong>Kategori:</strong>{{$item['kategori']}}</p>

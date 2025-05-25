@@ -3,8 +3,8 @@
 @section('title','Edit')
 
 @section('content')
-<div class="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
-    <h1 class="text-2xl font-bold mb-6 text-center">Edit {{ ucfirst($kategori) }} Item</h1>
+    <div class="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-6 text-center">Edit {{ ucfirst($kategori) }} Item</h1>
 
     <form action="{{ route('edit', ['kategori' => $kategori, 'index' => $index]) }}" method="POST">
         @csrf

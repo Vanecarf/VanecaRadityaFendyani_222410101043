@@ -7,7 +7,7 @@
     
         <!-- Foto Profil -->
         <div class="text-center">
-        <img src="{{asset('me.jpg')}}" alt="Foto Profil" class="w-40 h-40 object-cover rounded-full border-4 border-red-500 mx-auto"> 
+        <img src="{{asset('me.jpg')}}" alt="Foto Profil" class="w-40 h-40 object-cover rounded-full border-4 border-[#CD403B] mx-auto"> 
         <p class="text-red-600 mt-2 font-semibold">{{ $username }}</p>
         </div>
 
