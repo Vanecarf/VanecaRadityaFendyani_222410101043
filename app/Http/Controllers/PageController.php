@@ -127,7 +127,6 @@ class PageController extends Controller
     //Profile
     public function profile(Request $request)
     {
-        // $username = $request->query('username');
         $username = session('username');
 
         return view('profile', ["username"=>$username]);
