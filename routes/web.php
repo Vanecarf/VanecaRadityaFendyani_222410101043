@@ -17,5 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [PageController::class, 'login'])->name('login.submit');
 Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
+Route::get('/edit',[PageController::class, 'edit'])->name('edit');
+Route::post('/edit',[PageController::class, 'edit'])->name('edit.submit');
 Route::get('/profile', [PageController::class, 'profile'])->name('profile');
 Route::get('/logout', [PageController::class, 'logout'])->name('logout');

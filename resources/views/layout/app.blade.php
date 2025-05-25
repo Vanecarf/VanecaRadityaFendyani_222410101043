@@ -7,10 +7,16 @@
     <title>@yield('title')</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
+    .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
 </head>
-<body>
+<body class="min-h-screen flex flex-col font-poppins">
+    @include('components.navbar')
+
     <main>
         @yield('content')
     <main>
+
+    @include('components.footer')
 </body>
 </html>

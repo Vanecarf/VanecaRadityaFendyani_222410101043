@@ -132,15 +132,36 @@ class PageController extends Controller
         return view('profile',compact('username'));
     } 
 
+    //Edit
+    public function edit($kategori, $index)
+    {
+        $data = $this->getDataByKategori($kategori);
+
+        if (!isset($data[$index])) {
+            return redirect()->back()->withErrors(['error' => 'Data tidak ditemukan.']);
+        }
+
+        $item = $data[$index];
+        return view('edit_barang', compact('item', 'kategori', 'index'));
+    }
+
+    public function update(Request $request, $kategori, $index)
+    {
+        $validated = $request->validate([
+            'nama_barang' => 'required|string|max:255',
+            'kategori' => 'required|string|max:255',
+            'jumlah' => 'required|integer|min:1',
+            'harga' => 'required|string',
+        ]);
+
+        return redirect()->route('dashboard', ['username' => $request->input('username')])
+                         ->with('Data berhasil diperbarui.');
+    }
+
     //Logout
     public function logout()
     {
         return redirect()->route('login');
     }
-
-    
-
-
-
-    
+  
 }
