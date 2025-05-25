@@ -1,6 +1,6 @@
-<nav class="bg-[#8A1E41] text-white px-6 py-4 flex justify-between items-center">
+<nav class="bg-[#CD403B] text-white px-6 py-4 flex justify-between items-center">
     <div class="text-2xl font-serif">
-        <span class="text-4xl">S</span>KY <span class="text-sm">Shoes</span>
+        <span class="text-2xl">K-POP</span><span class="text-sm">Stuff</span>
     </div>
     <div class="text-lg font-semibold"></div>
     <ul class="flex gap-6 text-sm">
