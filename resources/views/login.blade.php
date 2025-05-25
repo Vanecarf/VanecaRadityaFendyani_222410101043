@@ -3,7 +3,7 @@
 @section('title','login')
 
 @section('content')
-    <div class="bg-red-600 p-8 rounded-lg shadow-lg w-80 text-white">
+    <div class="bg-[#CD403B] p-8 rounded-lg shadow-lg w-80 text-[#FFEEE2]">
     
     <form action="/login" method="POST" class="space-y-4">
       @csrf
@@ -12,9 +12,9 @@
       <div>
         <label for="username" class="text-sm">Username</label>
         <input type="text" name="username" id="username" value="{{ old('username') }}"
-               class="w-full px-4 py-2 mt-1 rounded-md bg-red-100 text-red-900 focus:outline-none focus:ring-2 focus:ring-red-300">
+               class="w-full px-4 py-2 mt-1 rounded-md bg-[#FFEEE2] text-black focus:outline-none focus:ring-2 focus:ring-red-300">
         @error('username')
-          <p class="text-sm text-yellow-200 mt-1">{{ $message }}</p>
+          <p class="text-sm text-black-200 mt-1">{{ $message }}</p>
         @enderror
       </div>
 
@@ -22,7 +22,7 @@
       <div>
         <label for="password" class="text-sm">Password</label>
         <input type="password" name="password" id="password"
-               class="w-full px-4 py-2 mt-1 rounded-md bg-red-100 text-red-900 focus:outline-none focus:ring-2 focus:ring-red-300">
+               class="w-full px-4 py-2 mt-1 rounded-md bg-[#FFEEE2] text-black focus:outline-none focus:ring-2 focus:ring-red-300">
         @error('password')
           <p class="text-sm text-yellow-200 mt-1">{{ $message }}</p>
         @enderror
@@ -30,7 +30,7 @@
 
       <!-- Submit -->
       <button type="submit"
-              class="bg-rose-50 text-red-600 px-4 py-2 rounded-md hover:bg-white transition duration-200 mx-auto block">
+              class="bg-[#FFEEE2] text-[#CD403B] px-4 py-2 rounded-md hover:bg-white transition duration-200 mx-auto block">
         Login
       </button>
     </form>

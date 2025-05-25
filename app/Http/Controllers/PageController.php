@@ -36,12 +36,12 @@ class PageController extends Controller
 
         $AlbumItems = [
             [
-                'images'=> 'https://down-id.img.susercontent.com/file/id-11134207-7r98p-lyc2okf68yi543.webp',
-                'nama_barang'=> 'Stray Kids - 9th Mini Album [ATE] (Platform Ver.)',
+                'images'=> 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR6L-4u8yF38fTFBqO1BpeG-sAppqGHmg3faBskFIdDqGHmf8oTTqpChzYhVNl_NPWCLaJJDmlMIqrQ4FoqodIp-lUy3fC5J45zQIb143E',
+                'nama_barang'=> 'Stray Kids - 9th Mini Album [ATE] (Platform ver.)',
                 'kategori'=> 'Album',
                 'jumlah'=> 45,
-                'harga'=> 'Rp200.000',
-                'images_detail'=> 'https://down-id.img.susercontent.com/file/id-11134207-7rasa-m4st8f75zqn1df.webp',
+                'harga'=> 'Rp250.000',
+                'images_detail'=> 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR1uPhJR1lajtzCCJBy_NHIi-eAqfvWdrwV9I6FmWInYd6OirvKIYbm_MU-sDV8qDPxwUQ2JoJCnwNhMLfszYvDDktXQ_qexn3B0gJ-f9Aj6VK41e6SVeVYrGM',
             ],
 
             [
@@ -54,7 +54,7 @@ class PageController extends Controller
             ],
 
             [
-                'images'=> 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRtK3eRyB-ejFS4jHzwB97PFVvJ5_9zTR0kG5bZ9bR0yT1FVuRaLlKFRmoQtP6R3mmw5taqqIncNWIXKAk1BocKCIR3otJbfofk-6GuTQzkYRJuTdBjMA6if3A',
+                'images'=> 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQPDYSWBKdU1e8j3RDQGGQE3jYmBZg4ZwbT1A7OwxcnsUzMCeOhe-4ex7YVu4q89IxS8ZQAmfVbAoDOrey2XTEgTc3f5LxJ',
                 'nama_barang'=> 'Stray Kids - 3rd Album [5-STAR]',
                 'kategori'=> 'Album',
                 'jumlah'=> 30,

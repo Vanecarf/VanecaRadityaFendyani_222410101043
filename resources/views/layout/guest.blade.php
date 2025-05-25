@@ -7,6 +7,8 @@
     <title>@yield('title')</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
+    .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
 </head>
 <body>
     <main>
