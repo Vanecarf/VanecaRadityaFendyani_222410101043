@@ -30,10 +30,6 @@ class PageController extends Controller
     {
         $username = $request->query('username');
 
-        if (!$username) {
-            return redirect()->route('login')->withErrors(['login' => 'Anda belum melakukan login.']);
-        }
-
         $AlbumItems = [
             [
                 'images'=> 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR6L-4u8yF38fTFBqO1BpeG-sAppqGHmg3faBskFIdDqGHmf8oTTqpChzYhVNl_NPWCLaJJDmlMIqrQ4FoqodIp-lUy3fC5J45zQIb143E',
