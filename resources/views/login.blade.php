@@ -3,9 +3,10 @@
 @section('title','login')
 
 @section('content')
-  <div class="bg-[#CD403B] p-8 rounded-lg shadow-lg w-80 text-[#FFEEE2] w-full max-w-md mx-auto mt-43">
+  <div class="bg-[url('/skztour.jpg')] bg-cover bg-position-[center_38%] h-screen overflow-hidden">
+    <div class="bg-[#CD403B] p-8 rounded-lg shadow-lg text-[#FFEEE2] w-full max-w-md mx-auto mt-42">
     
-    <form action="/login" method="POST" class="space-y-4">
+    <form id="loginForm" action="/login" method="POST" class="space-y-4">
       @csrf
 
       <!-- Username -->
@@ -34,8 +35,10 @@
         Login
       </button>
     </form>
-  </div>
+    </div>
 
+  </div>
+  
   <script>
         document.getElementById('loginForm').addEventListener('click', function () {
             const passwordField = document.getElementById('password');
