@@ -3,8 +3,8 @@
 @section('title','login')
 
 @section('content')
-  <div class="bg-[url('/skztour.jpg')] bg-cover bg-position-[center_38%] h-screen overflow-hidden">
-    <div class="bg-[#CD403B] p-8 rounded-lg shadow-lg text-[#FFEEE2] w-full max-w-md mx-auto mt-42">
+  <div class="bg-[url('/skztour.jpg')] bg-cover bg-position-[center_38%] h-screen overflow-hidden brightness-65">
+    <div class="bg-[#CD403B] p-8 rounded-lg shadow-lg text-[#FFEEE2] w-full max-w-xs mx-auto mt-45">
     
     <form id="loginForm" action="/login" method="POST" class="space-y-4">
       @csrf
